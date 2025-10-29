@@ -1,65 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Room Booking Form</title>
-    <style>
-        body {
-            
-            background-color: #f2f2f2;
-        }
-        h2 {
-            text-align: center;
-        }
-        form {
-            background-color: white;
-            width: 300px;
-            margin: 30px auto;
-            padding: 20px;
-            border: 1px solid #000;
-            border-radius: 5px;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input, select, textarea {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-            box-sizing: border-box;
-        }
-        textarea {
-            height: 50px;
-        }
-        .button-group {
-            text-align: center;
-            margin-top: 15px;
-        }
-        input[type="submit"], input[type="reset"] {
-            width: 100px;
-            padding: 5px;
-            margin: 5px;
-        }
-    </style>
 </head>
-<body>
-
+<body style="margin-inline:10cm" align="center">
+    <fieldset>
     <h2>Hotel Room Booking Form</h2>
-    <form>
+    <form action="submit.html" method="post">
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required>
+        <br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
+        <br><br>
 
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone">
+        <br><br>
 
         <label for="checkin">Check-in Date:</label>
         <input type="date" id="checkin" name="checkin">
+        <br><br>
 
         <label for="checkout">Check-out Date:</label>
         <input type="date" id="checkout" name="checkout">
+        <br><br>
 
         <label for="room">Room Type:</label>
         <select id="room" name="room">
@@ -67,18 +35,23 @@
             <option>Double Room</option>
             <option>Deluxe Room</option>
         </select>
+        <br><br>
 
         <label for="guests">Number of Guests:</label>
         <input type="number" id="guests" name="guests" min="1">
+        <br><br>
 
         <label for="requests">Special Requests:</label>
         <textarea id="requests" name="requests"></textarea>
+        <br><br>
 
         <div class="button-group">
             <input type="submit" value="Book Now">
             <input type="reset" value="Reset Form">
+            <br><br>
         </div>
     </form>
+    </fieldset>
 
 </body>
 </html>
