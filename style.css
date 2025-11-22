@@ -1,57 +1,47 @@
-body {
-  background-color: grey;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
+body{
+    font-family:Arial, sans-serif;
+    margin:20px
 }
 
-h1 {
-  color: #000;
-  margin-bottom: 30px;
+/* Block example */
+.block-menu a {
+    display: block;
+    background-color: rgb(94, 94, 194);
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+/* Inline example */
+.inline-menu a {
+    display: inline;
+    background-color: yellow;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+/* Inline-block elements */
+.inline-block-menu a {
+    display: inline-block;
+    background-color:aqua;
+    color:white;
+    height: 50px;
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+/* Float example */
+.float-menu a {
+    float: left;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
 }
 
-.product-card {
-  background-color: lightblue;
-  width: 250px;
-  margin: 0 auto;
-  padding: 15px;
-  border: 5px solid red;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
 
-.product-card img {
-  width: 100%;
-  border-radius: 5px;
-}
 
-.laptop h2 {
-  color: black;
-  font-size: 18px;
-  margin: 10px 0 5px;
-}
 
-.description p {
-  color: #555;
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-.price {
-  font-weight: bold;
-  color: red;
-}
-
-button {
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: darkblue;
-}
