@@ -1,56 +1,44 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  color: white;
-  padding: 15px 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
-.logo {
-  font-size:small;
-  font-weight: bold;
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
+h2 {
+    text-align: center;
 }
 
-.nav-links li {
-  margin: 0 15px;
+label {
+    font-weight: bold;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: small;
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
 }
 
-.actions a {
-  margin-left: 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; 
-  }
-  .actions {
-    font-size: small;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .nav-links a {
-    font-size: small;
-  }
-}
-
-@media (min-width: 1025px) {
-  .nav-links a {
-    font-size: small;
-  }
+button:hover {
+    background-color: #45a049;
 }
